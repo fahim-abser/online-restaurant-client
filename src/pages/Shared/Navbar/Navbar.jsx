@@ -1,16 +1,9 @@
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
     const navOptions = <>
-        <li><a>Item 12</a></li>
-      <li tabIndex={0}>
-        <details>
-          <summary>Parent</summary>
-          <ul className="p-2">
-            <li><a>Submenu 1</a></li>
-            <li><a>Submenu 2</a></li>
-          </ul>
-        </details>
-      </li>
+        <li><Link to='/'>Home</Link></li>
+        <li><Link to='/menu'>Menu</Link></li>
       <li><a>Item 3</a></li>
     </>
     return (
@@ -25,7 +18,7 @@ const Navbar = () => {
         {navOptions}
       </ul>
     </div>
-    <a className="btn btn-ghost normal-case text-2xl font-bold">Online Restaurent</a>
+    <a className="btn btn-ghost normal-case text-3xl font-bold"><Link to='/'>Online Restaurent</Link></a>
   </div>
   <div className="navbar-center hidden lg:flex">
     <ul className="menu menu-horizontal px-1">
