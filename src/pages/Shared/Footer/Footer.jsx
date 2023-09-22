@@ -17,7 +17,7 @@ const Footer = () => {
           <p>
             Online Restaurent.
             <br />
-            Providing reliable food since 2022
+            Providing  food since 2022
           </p>
         </div>
         <div>
